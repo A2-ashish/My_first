@@ -1,2 +1,3 @@
 # My_first
-My first re
+My first repository 
+Beginning a new journey 
