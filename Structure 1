@@ -1,1 +1,31 @@
+package main;
+import java.util.*;
 
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of subjects: ");
+        int n = sc.nextInt();
+        int i = 0;
+        int m = 0;
+
+        for (int k = 1; k <= n; k++) {
+            System.out.println("Enter subject name: ");
+            String a1 = sc.next();
+            System.out.println("Enter max marks: ");
+            int a2 = sc.nextInt();
+            System.out.println("Enter marks obtained: ");
+            int a = sc.nextInt();
+            i += a;
+            m += a2;
+        }
+
+        System.out.println("Total marks obtained: " + i);
+        System.out.println("Maximum possible marks: " + m);
+        
+        // Calculate percentage
+        double percentage = (double) i / m * 100;
+        System.out.print("Percentage obtained: " + percentage);
+    }
+}
